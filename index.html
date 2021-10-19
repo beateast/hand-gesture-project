@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>hand gesture project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+
+            <center>
+                <h1 class="btn btn-warning text-capitalize" height="100" width="100">gesture web app
+                    <br>
+                    <span>&#9757;</span>
+                    <span>&#9994;</span>
+                    <span>&#9995;</span>
+                    <span>&#9996;</span>
+                    <span>&#128076;</span>
+                </h1>
+                <br><br>
+
+                <h1>Take a Selfie of the Gesture to know about its meaning</h1>
+                <h2>On the following gesture the model is Trained - </h2>
+                <span>&#9995;</span>
+                <span>&#9994;</span>
+                <span>&#128076;</span>
+                <span>&#128071;</span>
+                <span>&#128070;</span>
+                <br>
+
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <label class="btn btn-warning">Webcam View - </label>
+                    <div id="camera"></div>
+                    <br><br>
+                    <button onclick="take_snapshot();" class="btn btn-warning">Capture Image</button>
+                    <br><br>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <label class="btn btn-warning">Snapshot - </label>
+                    <div id="result"></div>
+                    <br><br>
+                    <button onclick="check();" class="btn btn-warning">Pridic Gesture</button>
+                    </div>
+                <br>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <label class="btn btn-warning">Pridiction 1 - </label>
+                    <p class="gesture_name" id="result_gesture_name"></p>
+                    <p class="gesture" id="update_gesture"></p>
+                </div>
+                <br>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <label class="btn btn-warning">Pridiction 2 - </label>
+                    <p class="gesture_name" id="result_gesture_name2"></p>
+                    <p class="gesture" id="update_gesture2"></p>
+                </div>
+
+                
+                
+            </center>
+        </div>
+    </body>
+</html>
